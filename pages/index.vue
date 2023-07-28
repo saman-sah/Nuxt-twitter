@@ -15,8 +15,10 @@
                     </div>
 
                     <!-- Main Content -->
-                    <main class="col-span-12 bg-red-500 sm:block sm:col-span-8 md:col-span-8 xl:col-span-6">
-                        <h1>Main Section</h1>
+                    <main class="col-span-12  sm:block sm:col-span-8 md:col-span-8 xl:col-span-6">
+                        <MainSection title="Home" :loading="loading">
+                            This is our Home Page
+                        </MainSection>
                     </main>
 
 
@@ -35,5 +37,6 @@
     </div>
 </template>
 <script setup>
+    const loading= ref(false)
     const darkMode= ref(false)
 </script>
